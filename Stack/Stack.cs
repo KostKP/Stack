@@ -28,6 +28,9 @@ namespace Stack
 
         public override string ToString()
         {
+            if (Count() == 0) {
+                return "Stack[0]{}";
+            }
             string text = "Stack[" + Count() + "]{";
             Node<T> current = storedge;
             while (current != null)
