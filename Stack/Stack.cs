@@ -10,8 +10,8 @@ namespace Stack
 
         private class Node<T>
         {
-            public T Data { get; set; }
-            public Node<T> Link { get; set; }
+            public T Data;
+            public Node<T> Link;
 
             public Node(Node<T> link = null)
             {
